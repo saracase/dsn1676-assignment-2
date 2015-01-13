@@ -26,6 +26,7 @@ body {
     position: relative;
     width: 300px;
     height: 300px;
+    margin: 0 auto;
 }
 
 .hand-hour {
@@ -53,10 +54,50 @@ body {
     top: calc(50% - 14px);
 }
 
-.clock-face:hover .hand-hour {
+.clock-face:target .hand-hour {
         transform: rotate(360deg);
 }
 
-.clock-face:hover .hand-minute {
+.clock-face:target .hand-minute {
         transform: rotate(4320deg);
+}
+
+.button-forwards {
+    background-color: #339900;
+    width: 6em;
+    line-height: 6em;
+    text-decoration: none;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    margin: 1em;
+    transition: color 1000ms linear;
+}
+
+.button-backwards {
+    background-color: #ff0000;
+    width: 6em;
+    line-height: 6em;
+    text-decoration: none;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    margin: 1em;
+    transition: color 1000ms linear;
+}
+
+.button-forwards:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.button-backwards:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.centered {
+    text-align: center;
 }
