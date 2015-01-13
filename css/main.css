@@ -58,5 +58,5 @@ body {
 }
 
 .clock-face:hover .hand-minute {
-        transform: rotate(360deg);
+        transform: rotate(4320deg);
 }
